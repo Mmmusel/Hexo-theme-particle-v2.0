@@ -1,0 +1,23 @@
+<% var rootlink = config.root %> 
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            Welcome >3<
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @<%- config.author %>
+        </div>
+        <div></div>
+        <% if(theme.footer.ICP.enable){ %>
+        <div>
+            备案号：<a href="http://beian.miit.gov.cn/">
+                <%- theme.footer.ICP.code %>
+            </a>
+        </div>
+        <% } %>
+    </div>
+
+</footer>
+
+<script src="<%- rootlink %>js/highlight.min.js"></script>
+<script src="<%- rootlink %>js/particle.js"></script>
